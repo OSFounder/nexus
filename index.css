@@ -35,3 +35,8 @@ a:hover {
 #active {
  color: grey;
 }
+
+#gap1 {
+ width: 97.6%;
+ padding: 60px, 60px;
+}
