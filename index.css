@@ -95,6 +95,9 @@ img {
   color: white;
   border-radius: 8px;
  }
+#dwnldfooters {
+ bottom: 0px;
+}
 
 #dwnldF1 {
  padding: 60px 60px;
