@@ -90,6 +90,7 @@ img {
   color: white;
   border-radius: 8px;
   text-align: center;
+  positon: absolute;
  }
 
 #gap2 {
