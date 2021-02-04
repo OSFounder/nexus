@@ -76,11 +76,13 @@ img {
 }
  
 #Titan_win10 {
+ float: left;
  text-align: center;
+ display: inline block;
+ padding: 200px;
 }
 
  #titanT {
-  padding: 120px 120px;
   font-family: 'Oswald', sans-serif;
   color: black;
  }
