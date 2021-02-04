@@ -40,3 +40,15 @@ a:hover {
  width: 97.6%;
  padding: 60px, 60px;
 }
+
+#PT1 {
+ text-align: center;
+ color: black;
+ font-family: 'Oswald', sans-serif;
+}
+
+p {
+ font-family: 'Oswald', sans-serif;
+ text-align: center;
+ color: black;
+}
