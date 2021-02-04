@@ -26,3 +26,7 @@ a:hover {
 #title {
  padding-right: 60px;
 }
+
+#active {
+ background-color: white;
+}
