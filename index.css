@@ -19,6 +19,10 @@ a {
  padding-right: 30px;
 }
 
+a:hover {
+ color: lightgrey;
+}
+
 #title {
  padding-right: 60px;
 }
