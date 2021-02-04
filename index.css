@@ -55,7 +55,9 @@ p {
 }
 
 #img1 {
-  max-width: 97.6%;
-  max-height: 100vh;
-  margin: auto;
+  padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
