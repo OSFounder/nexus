@@ -23,6 +23,10 @@ a:hover {
  color: lightgrey;
 }
 
+#title:hover {
+ color: white;
+}
+
 #title {
  padding-right: 933px;
 }
