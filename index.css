@@ -77,6 +77,10 @@ img {
  background-color: purple;
 }
 
+#space1 {
+    padding: 120px 120px;
+ }
+ 
  #titanT {
   padding: 30px 30px;
   font-family: 'Oswald', sans-serif;
