@@ -29,6 +29,7 @@ a:hover {
 
 #title {
  padding-right: 50px;
+ float: left;
 }
 
 #active {
