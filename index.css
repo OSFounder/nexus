@@ -33,12 +33,6 @@ a:hover {
  float: left;
 }
 
-#titanT {
- font
-#active {
- color: grey;
-}
-
 #gap1 {
  width: 97.6%;
  padding: 60px, 60px;
@@ -76,10 +70,6 @@ img {
  padding: 12px 12px;
  background-color: purple;
 }
-
-#space1 {
-    padding: 120px 120px;
- }
  
  #titanT {
   padding: 30px 30px;
