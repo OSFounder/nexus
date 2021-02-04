@@ -74,17 +74,12 @@ img {
  background-color: purple;
 }
  
-#Titan_win10 {
- float: left;
- text-align: center;
- display: inline block;
- padding: 200px;
-}
 
  #titanT {
-  padding: 160px 160px;
+  padding: 40px 40px;
   font-family: 'Oswald', sans-serif;
   color: black;
+  text-align: center;
  }
  
  #titandwnld {
@@ -94,9 +89,11 @@ img {
   background-color: black;
   color: white;
   border-radius: 8px;
+  text-align: center;
  }
-#dwnldfooters {
- bottom: 0px;
+
+#gap2 {
+ padding: 300px 300px;
 }
 
 #dwnldF1 {
