@@ -33,6 +33,8 @@ a:hover {
  float: left;
 }
 
+#titanT {
+ font
 #active {
  color: grey;
 }
@@ -74,3 +76,18 @@ img {
  padding: 12px 12px;
  background-color: purple;
 }
+
+ #titanT {
+  padding: 30px 30px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+ }
+ 
+ #titandwnld {
+  padding: 15px 15px;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+ }
