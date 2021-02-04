@@ -89,8 +89,8 @@ img {
   background-color: black;
   color: white;
   border-radius: 8px;
+  margin: 0 auto;
   text-align: center;
-  positon: absolute;
  }
 
 #gap2 {
