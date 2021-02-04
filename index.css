@@ -55,5 +55,7 @@ p {
 }
 
 #img1 {
- position: middle;
+  max-width: 97.6%;
+  max-height: 100vh;
+  margin: auto;
 }
