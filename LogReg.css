@@ -1,5 +1,17 @@
 #LoginF {
   padding = 30px 30px;
+  text-align: center;
   background-color: black;
   color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+input {
+  border: solid black 2px;
+}
+
+submit {
+  padding: 14px 16px;
+  border: solid black 2px;
+  border-radius: 8px;
 }
