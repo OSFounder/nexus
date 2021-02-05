@@ -41,3 +41,9 @@ a:hover {
  padding: 60px, 60px;
 }
 
+#homeT {
+  font-family: 'Oswald', sans-serif;
+  padding: 300px 300px;
+  width: 97.6%;
+  text-transform: uppercase;
+}
