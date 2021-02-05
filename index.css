@@ -54,10 +54,10 @@ a:hover {
   color: #ffce00;
   background-color: #484d5c;
  animation: fadeIn ease 20s;
--webkit-animation: fadeIn ease 20s;
--moz-animation: fadeIn ease 20s;
--o-animation: fadeIn ease 20s;
--ms-animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 3s;
+-moz-animation: fadeIn ease 3s;
+-o-animation: fadeIn ease 3s;
+-ms-animation: fadeIn ease 3s;
 }
 
 @keyframes fadeIn {
