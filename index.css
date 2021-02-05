@@ -47,6 +47,8 @@ a:hover {
   padding: 300px 300px;
   width: 97.6%;
   text-transform: uppercase;
+  color: #ffce00;
+  background-color: #484d5c;
 }
 
 .wrapper {
