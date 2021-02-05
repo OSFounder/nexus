@@ -115,3 +115,23 @@ padding-left: 10px; /* 3 */
   padding: 14px 16px;
   color: white;
 }
+
+#foot1 {
+ padding: 200px 0.1px;
+ width: fit-content;
+ background-color: #484d5c
+}
+
+#footP {
+ color: #ffce00;
+ text-align: center;
+ padding: 14px 16px;
+ font-size: 40px;
+}
+
+#foot2 {
+ padding: 10px 0.1px;
+ width: fit-content;
+ background-color: #ffce00;
+}
+ 
