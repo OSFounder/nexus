@@ -108,3 +108,10 @@ max-width:1160px; /* 2 */
 padding-right: 10px; /* 3 */
 padding-left: 10px; /* 3 */
 }
+
+.p1 {
+  font-family: 'Cardo', serif;
+  font-size: 15px
+  padding: 14px 16px;
+  color: black;
+}
