@@ -44,6 +44,20 @@ a:hover {
  color: grey;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #gap1 {
  width: 97.6%;
  padding: 60px, 60px;
