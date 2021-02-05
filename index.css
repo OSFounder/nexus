@@ -5,12 +5,12 @@
 }
 
 #navbar {
- padding: 14px 16px;
+ padding: 14px 0.1px;
  font-family: 'Oswald', sans-serif;
  background-color: black;
  font-size: 24px;
  text-align: center;
- width: 97.6%;
+ width: 100%;
 }
 
 a {
@@ -44,8 +44,8 @@ a:hover {
 #homeT {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  padding: 300px 16px;
-  width: 97.6%;
+  padding: 300px 0.1px;
+  width: 100%;
   text-transform: uppercase;
   color: #ffce00;
   background-color: #484d5c;
