@@ -64,3 +64,16 @@
     transform: none;
   }
 }
+
+/**
+* 1. Centers the content.
+* 2. Feel free to change this, this sets the width
+* 3. Adds some internal 'padding' to the div
+*/
+#wrapper {
+margin-right: auto; /* 1 */
+margin-left: auto; /* 1 */
+max-width:1160px; /* 2 */
+padding-right: 10px; /* 3 */
+padding-left: 10px; /* 3 */
+}
