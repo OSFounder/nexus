@@ -3,3 +3,18 @@
   border: 0;
   margin: 0;
 }
+
+#nav {
+  padding: 14px 0.1px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  float: left;
+}
+
+#title {
+ text-align: center;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 300;
+ text-transform: uppercase;
+}
