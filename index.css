@@ -13,13 +13,13 @@
 }
 #topnav {
   position: relative;
-  background-color: black;
+  background-color: white;
   overflow: hidden;
 }
 
 #topnav a {
   float: left;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -31,12 +31,12 @@
 
 #topnav a:hover {
   background-color: #fce1e0;
-  color: black;
+  color: white;
 }
 
 #centered a:hover {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 
 #topnav a.active {
