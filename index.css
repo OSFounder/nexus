@@ -81,3 +81,13 @@ padding-left: 10px; /* 3 */
 body {
   Background color: #fce1e0
 }
+
+#txt1 {
+  padding: 30px 16px;
+  Text color: #000000
+}
+#txt1 h1, h2, h3 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 300;
+ text-transform: uppercase;
+}
