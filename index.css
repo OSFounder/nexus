@@ -97,6 +97,10 @@ padding-left: 10px; /* 3 */
  text-transform: uppercase;
 }
 
+#divider {
+  padding: 60px 60px;
+}
+
 #img1 {
   padding: 40px 40px;
   background-color: white;
