@@ -86,12 +86,7 @@ padding-left: 10px; /* 3 */
 
 #txt1T {
   padding: 14px 16px;
-  background-color: rgba(252, 225, 224, 0.7); 
-  font-size: 35px;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 50px;
 }
 
 #txt1 h1, h2, h3 {
