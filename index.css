@@ -28,6 +28,11 @@
   color: black;
 }
 
+#title:hover {
+  color: white;
+  background-color: black;
+}
+
 #topnav a.active {
   background-color: purple;
   color: white;
