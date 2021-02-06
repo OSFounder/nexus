@@ -28,7 +28,7 @@
   color: black;
 }
 
-#title:hover {
+#centered a:hover {
   color: white;
   background-color: black;
 }
