@@ -79,13 +79,21 @@ padding-right: 10px; /* 3 */
 padding-left: 10px; /* 3 */
 }
 
+#txt1 {
+  Text color: #000000;
+  position: relative;
+}
+
 #img1 {
   width: 100%;
   height: auto;
 }
 
-#txt1 {
-  Text color: #000000
+#txt1T {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #txt1 h1, h2, h3 {
