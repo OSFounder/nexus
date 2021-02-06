@@ -84,12 +84,11 @@ padding-left: 10px; /* 3 */
   position: relative;
 }
 
-#img1 {
-  width: 100%;
-}
-
 #txt1T {
-  font-size: 40px;
+  background-image: url('https://nexuslive.tech/img2.jpg');
+  padding: 14px 16px;
+  background-color: rgba(252, 225, 224, 0.7); 
+  font-size: 35px;
   position: absolute;
   top: 25%;
   left: 50%;
