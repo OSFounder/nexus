@@ -5,7 +5,8 @@
 }
 
 #topnav {
-   position: relative;
+  padding: 24px 16px;
+  position: relative;
   background-color: black;
   overflow: hidden;
 }
@@ -23,7 +24,7 @@
 }
 
 #topnav a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
 
