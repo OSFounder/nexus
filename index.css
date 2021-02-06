@@ -85,7 +85,7 @@ padding-left: 10px; /* 3 */
 }
 
 #txt1T {
-  padding: 50px 16px;
+  padding: 50px 0px;
   font-size: 50px;
   border-bottom: solid 3px white;
 }
