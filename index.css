@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+#web-content {
+  position: relative;
+  min-height: 100vh;
+}
 #topnav {
   position: relative;
   background-color: black;
