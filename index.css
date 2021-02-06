@@ -163,6 +163,9 @@ padding-left: 10px; /* 3 */
 
 * {box-sizing:border-box}
 
+.mySlides {
+  display: none;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
