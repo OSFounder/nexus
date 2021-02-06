@@ -55,6 +55,9 @@
     float: none;
     display: block;
   }
+  #topnav {
+    padding: 30px 16px;
+  }
   
   #centered a {
     position: relative;
