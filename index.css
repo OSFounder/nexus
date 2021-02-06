@@ -79,10 +79,15 @@ padding-right: 10px; /* 3 */
 padding-left: 10px; /* 3 */
 }
 
+#img1 {
+  width: 100%;
+  height: auto;
+}
+
 #txt1 {
-  padding: 150px 16px;
   Text color: #000000
 }
+
 #txt1 h1, h2, h3 {
  font-family: 'Montserrat', sans-serif;
  font-weight: 300;
