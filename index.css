@@ -52,11 +52,9 @@
 
 @media screen and (max-width: 600px) {
   #topnav a, #right {
+    padding: 30px 16px;
     float: none;
     display: block;
-  }
-  #topnav {
-    padding: 30px 16px;
   }
   
   #centered a {
