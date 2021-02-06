@@ -102,6 +102,6 @@ padding-left: 10px; /* 3 */
 }
 
 #img1 {
-  padding: 40px 40px;
-  background-color: white;
+  overflow: none;
+  max-width: 100%;
 }
