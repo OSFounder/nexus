@@ -10,8 +10,7 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
     // ..
   });
 
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
+
 var slideIndex = 1;
 
 var myTimer;
