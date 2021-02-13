@@ -150,6 +150,7 @@ padding-left: 10px; /* 3 */
  height: 60px;
  background-color: white;
 }
+
 #copyright {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -161,4 +162,8 @@ padding-left: 10px; /* 3 */
   border-bottom: solid 4px #fce1e0;
 }
 
+img1 {
+  width: 100vc;
+  height: auto;
+}
 
