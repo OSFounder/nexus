@@ -123,3 +123,9 @@ img {
     max-width: 100%;
 }
 
+#intro1 {
+  background-image: url("https://nexuslive.tech/nexusimg1.jpg")
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
