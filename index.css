@@ -123,7 +123,7 @@ img {
     max-width: 100%;
 }
 
-#intro1 {
+body {
   background-image: url("https://nexuslive.tech/nexusimg1.jpg")
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -135,4 +135,8 @@ p {
   font-weight: 300;
   text-transform: uppercase;
 }
-  
+
+#intro1 {
+  float: right;
+  text-align: left;
+}
