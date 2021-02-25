@@ -99,15 +99,14 @@ padding-left: 10px; /* 3 */
 }
 
 #copyright {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   background-color: white;
   text-transform: uppercase;
-  border-bottom: solid 4px #fce1e0;
 }
 
 img {
