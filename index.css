@@ -98,9 +98,15 @@ padding-left: 10px; /* 3 */
   padding: 60px 60px;
 }
 
+footer {
+  display: block;
+  padding: 14px 16px;
+  height: 60px;
+  background-color: white;
+}
+  
+
 #copyright {
-  padding-top: 30px;
-  padding-bottom: 30px;
   text-align: center;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
