@@ -25,6 +25,10 @@ a {
   text-transform: uppercase;
   float: left;
   color: black;
+  -webkit-transition: color 1s linear;
+    -moz-transition: color 1s linear;
+    -ms-transition: color 1s linear;
+    -o-transition: color 1s linear;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,6 +44,10 @@ a {
     -o-transition: background 1s linear;
   background-color: #fce1e0;
   color: white;
+  -webkit-transition: color 1s linear;
+    -moz-transition: color 1s linear;
+    -ms-transition: color 1s linear;
+    -o-transition: color 1s linear;
   font-weight: bolder;
 }
 
