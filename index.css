@@ -34,8 +34,10 @@ a {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #fce1e0 ;
+  transition: background-color 1s;
+  background-color: #fce1e0;
   color: white;
+  font-weight: bolder;
 }
 
 /* Add a color to the active/current link */
