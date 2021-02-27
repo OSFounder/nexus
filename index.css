@@ -40,10 +40,6 @@ a {
   font-weight: bolder;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  border-bottom: 5px solid #fce1e0 ;
-}
 
 /* Centered section inside the top navigation */
 .topnav-centered a {
