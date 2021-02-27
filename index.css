@@ -27,6 +27,11 @@ a {
   font-size: 17px;
 }
 
+#home a:hover {
+  background-color: white;
+  color: black;
+}
+
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #fce1e0 ;
