@@ -8,8 +8,9 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
+  width: 100%
   position: relative;
-  background-color: #333;
+  background-color: white;
   overflow: hidden;
 }
 
@@ -18,7 +19,7 @@
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -27,8 +28,8 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #fce1e0 ;
+  color: white;
 }
 
 /* Add a color to the active/current link */
