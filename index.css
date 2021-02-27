@@ -71,4 +71,10 @@ a {
     left: 0;
     transform: none;
   }
-}
+
+  
+  #headC {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  }
