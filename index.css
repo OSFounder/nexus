@@ -16,7 +16,8 @@
 /* Style the links inside the navigation bar */
 a {
   background-color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
   float: left;
   color: black;
