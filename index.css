@@ -8,14 +8,14 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  width: 100%
   position: relative;
   background-color: white;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+a {
+  background-color: white;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   float: left;
@@ -34,7 +34,7 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  border-bottom: 5px solid #fce1e0 ;
   color: white;
 }
 
