@@ -15,7 +15,11 @@
 
 /* Style the links inside the navigation bar */
 a {
-  background-color: white;
+      background-color: white;
+   -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -ms-transition: background 1s linear;
+    -o-transition: background 1s linear;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -27,14 +31,13 @@ a {
   font-size: 17px;
 }
 
-#home a:hover {
-  background-color: white;
-  color: black;
-}
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  transition: background-color 1s;
+   -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -ms-transition: background 1s linear;
+    -o-transition: background 1s linear;
   background-color: #fce1e0;
   color: white;
   font-weight: bolder;
