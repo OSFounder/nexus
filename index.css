@@ -43,7 +43,7 @@ a {
   color: white;
 }
 
-.topnav #home a:hover {
+.topnav-centered a:hover {
   background-color: white;
   color: black;
 }
