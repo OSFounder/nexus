@@ -43,6 +43,10 @@ a {
   color: white;
 }
 
+.topnav #home a:hover {
+  background-color: white;
+  color: black;
+}
 
 /* Centered section inside the top navigation */
 .topnav-centered a {
