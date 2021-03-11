@@ -18,11 +18,11 @@
   </div>
 
   <!-- Left-aligned links (default) -->
-  <a href="https://nexuslive.tech/catalog.php">Learn</a>
+  <a href="https://nexuslive.tech/catalog.html">Learn</a>
   <!-- Right-aligned links -->
   <div class="topnav-right">
-    <a href="https://nexuslive.tech/login.php">Login</a>
-    <a href="https://nexuslive.tech/register.php">Register</a>
+    <a href="https://nexuslive.tech/login.html">Login</a>
+    <a href="https://nexuslive.tech/register.html">Register</a>
   
   </div>
 
