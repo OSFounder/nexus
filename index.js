@@ -173,5 +173,6 @@ function begin() {
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    alert("Email and or password wrong, try again.")
   });
 }
