@@ -11,6 +11,14 @@
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
+    
+      var user = firebase.auth().currentUser;
+
+      if (user) {
+        // User is signed in.
+      } else {
+        // No user is signed in.
+      }
 
       //get data
       const txtemail = document.getElementById('email_field');
@@ -41,11 +49,13 @@
           
       });
        
-      var user = firebase.auth().currentUser;
-
-      if (user) {
-        // User is signed in.
-      } else {
-        // No user is signed in.
-      }
+      firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            // User is signed in.
+              console.log(user)
+          } else {
+            // No user is signed in.
+              console.log('not logged in')
+          }
+});
 }());
