@@ -22,8 +22,8 @@
       //listen for sign in attempt
       binsignin.addEventListener('click', e => {
           //get email and pword
-          const email = txtemail.value();
-          const pass = txtpword.value();
+          const email = txtemail.value;
+          const pass = txtpword.value;
           const auth = firebase.auth();
           //sign in
           const promise = auth.signInWithEmailAndPassword(email, pass);
