@@ -30,5 +30,15 @@
           promise.catch(e => console.log(e.message()));
           
       });
+        binsignup.addEventListener('click', e => {
+          //get email and pword
+          const email = txtemail.value;
+          const pass = txtpword.value;
+          const auth = firebase.auth();
+          //sign in
+          const promise = auth.signUpWithEmailAndPassword(email, pass);
+          promise.catch(e => console.log(e.message()));
+          
+      });
 
 }());
