@@ -36,7 +36,7 @@
           const pass = txtpword.value;
           const auth = firebase.auth();
           //sign in
-          const promise = auth.signUpWithEmailAndPassword(email, pass);
+          const promise = auth.createUserWithEmailAndPassword(email, pass);
           promise.catch(e => console.log(e.message()));
           
       });
