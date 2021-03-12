@@ -44,6 +44,7 @@
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
+            print(errorMessage);
          });
           
       });
@@ -63,6 +64,7 @@
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
+            print(errorMessage);
           });
           
       });
