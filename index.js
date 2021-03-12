@@ -160,6 +160,6 @@ auth
     });
 };
 
-function login() {
+function begin() {
  alert("test")
 }
