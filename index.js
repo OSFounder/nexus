@@ -163,6 +163,7 @@ auth
 function begin() {
  var userEmail = document.getElementById("field_email").value;
  var userPassword = document.getElementById("field_password").value;
+ alert(userEmail, userPassword)
  
  firebase.auth().signInWithEmailAndPassword(userEmail, userPassword)
   .then((userCredential) => {
