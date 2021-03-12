@@ -41,7 +41,7 @@
           
       });
        
-      firebase.auth.onAuthStateChanged(firebaseUser => {
+      firebase.auth().onAuthStateChanged(firebaseUser => {
           if(firebaseUser) {
               console.log(firebaseUser);
           }
