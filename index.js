@@ -159,3 +159,7 @@ auth
     alert("invalid email or bad network connection");
     });
 };
+
+function login() {
+ alert("test")
+}
