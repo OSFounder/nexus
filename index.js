@@ -40,7 +40,7 @@
             var user = userCredential.user;
             // ...
           })
-          .catch((error) => {
+          promise.catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
@@ -59,7 +59,7 @@
             var user = userCredential.user;
             // ...
           })
-          .catch((error) => {
+          promise.catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
