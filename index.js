@@ -20,7 +20,7 @@
       const binsignout = document.getElementById('log-out');
  
       //listen for sign in attempt
-      binsignin.addEventListner('click', e => {
+      binsignin.addEventListener('click', e => {
           //get email and pword
           const email = txtemail.value();
           const pass = txtpword.value();
