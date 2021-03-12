@@ -84,3 +84,11 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   }
+
+  email_field {
+    padding: 14px 16px;
+    display: block;
+    text-align: center;
+    background-color: white;
+    color: black;
+  }
