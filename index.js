@@ -11,7 +11,11 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-const auth = firebase.auth()
+//get data
+const email = document.getElementById('email_field');
+const pword = document.getElementById('pass_field');
+const signin = document.getElementById('log-in');
+const signout = document.getElementById('log-out');
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
