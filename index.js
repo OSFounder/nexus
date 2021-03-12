@@ -35,7 +35,7 @@
           const auth = firebase.auth();
           //sign in
           const promise = auth.signInWithEmailAndPassword(email, pass);
-          .then((userCredential) => {
+          promise.then((userCredential) => {
             // Signed in 
             var user = userCredential.user;
             // ...
@@ -54,7 +54,7 @@
           const auth = firebase.auth();
           //sign in
           const promise = auth.createUserWithEmailAndPassword(email, pass);
-          .then((userCredential) => {
+          promise.then((userCredential) => {
             // Signed in 
             var user = userCredential.user;
             // ...
