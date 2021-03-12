@@ -161,5 +161,17 @@ auth
 };
 
 function begin() {
- alert("test")
+ var userEmail = document.getElementById("field_email").value;
+ var userPassword = document.getElementById("field_password").value;
+ 
+ firebase.auth().signInWithEmailAndPassword(userEmail, userPassword)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+  });
 }
