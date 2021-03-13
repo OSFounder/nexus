@@ -1,4 +1,4 @@
-(function() {
+
 
     var firebaseConfig = {
         apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
@@ -40,11 +40,10 @@
             var user = userCredential.user;
             // ...
           })
-          promise.catch((error) => {
+          .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
-            print(errorMessage);
          });
           
       });
@@ -60,11 +59,10 @@
             var user = userCredential.user;
             // ...
           })
-          promise.catch((error) => {
+          .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
-            print(errorMessage);
           });
           
       });
@@ -78,4 +76,3 @@
               console.log('not logged in')
           }
 });
-}());
