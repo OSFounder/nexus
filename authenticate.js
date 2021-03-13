@@ -88,6 +88,7 @@ binSignUp.addEventListener('click', e=> {
 
 binSignOut.addEventListener('click', e=> {
     signOut();
+    authStateListener();
 });
               
    
