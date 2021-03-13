@@ -1,8 +1,4 @@
 
-// ensuring sample correctness offline
-import firebase from "firebase/app";
-import "firebase/auth";
-
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
     apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
