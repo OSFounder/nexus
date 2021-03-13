@@ -14,9 +14,9 @@
     
    const txtEmail = document.getElementById('email_field');
    const txtPword = document.getElementById('pass_field');
-   const binSignIn = document.getElementById('sign-in');
+   const binSignIn = document.getElementById('log-in');
    const binSignUp = document.getElementById('sign-up');
-   const binSignOut = document.getElementById('sign-out');
+   const binSignOut = document.getElementById('log-out');
    
    //add login event
    binSignIn.addEventListener('click', e => {
