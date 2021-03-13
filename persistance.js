@@ -11,7 +11,7 @@ function setPersistenceSession() {
       // ...
       // New sign-in will be persisted with session persistence.
       return firebase.auth().signInWithEmailAndPassword(email, password);
-    })
+    });
     .catch((error) => {
       // Handle Errors here.
       var errorCode = error.code;
