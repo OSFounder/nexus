@@ -22,11 +22,18 @@
    //add login event
    binSignIn.addEventListener('click', e => {
        const email = txtEmail.value;
-       const pass = txtPword.value;
-       promise = firebase.auth().signInWithEmailAndPassword(email, pass)
-       promse.catch(e => console.log(e.message));
-       
-   });
+       const password = txtPword.value;
+       firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in 
+    var user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ..
+  });
     
     
 }());
