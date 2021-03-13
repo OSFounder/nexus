@@ -10,11 +10,11 @@ input {
     text-align: left;
     background-color: white;
     display: block;
-    margin: 0 auto;
 }
 
-button {
+binButtons {
     padding: 14px 20px;
     text-align: center;
     background-color: white;
+    display: block;
 }
