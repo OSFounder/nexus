@@ -20,7 +20,7 @@ const txtPword = document.getElementById('pass_field').value;
 const binSignIn = document.getElementById('log-in');
 const binSignUp = document.getElementById('sign-up');
 const binLogOut = document.getElementById('log-out');
-binSignIn.addEventListener(e => {
+binSignIn.addEventListener('click', e => {
   var email = txtEmail.value;
   var password = txtPword.value;
   // [START auth_signin_password]
@@ -37,7 +37,7 @@ binSignIn.addEventListener(e => {
   // [END auth_signin_password]
 });
 
-binSignUp.addEventListener(e => {
+binSignUp.addEventListener('click', e => {
   var email = txtEmail.value;
   var password = textPword.value;
   // [START auth_signup_password]
