@@ -10,7 +10,7 @@
       appId: "1:75486796978:web:d4fb7013ad6131a6257dab",
       measurementId: "G-RQNWQVCW9T"
 };
-  firebase.initializeApp(config);
+  firebase.initializeApp(firebaseConfig);
   firebase.analytics();
     
    const txtEmail = document.getElementById('email_field');
