@@ -24,13 +24,13 @@ binSignIn.addEventListener('click', e => {
   var email = txtEmail.value;
   var password = txtPword.value;
   // [START auth_signin_password]
-  firebase.auth().signInWithEmailAndPassword(email, password)
-    .then((userCredential) => {
+ const promise =  firebase.auth().signInWithEmailAndPassword(email, password)
+    promise.then((userCredential) => {
       // Signed in
       var user = userCredential.user;
       // ...
     })
-    .catch((error) => {
+    promise.catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
     });
@@ -41,13 +41,13 @@ binSignUp.addEventListener('click', e => {
   var email = txtEmail.value;
   var password = textPword.value;
   // [START auth_signup_password]
-  firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then((userCredential) => {
+  const promise = firebase.auth().createUserWithEmailAndPassword(email, password)
+    promise.then((userCredential) => {
       // Signed in 
       var user = userCredential.user;
       // ...
     })
-    .catch((error) => {
+    promise.catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
       // ..
