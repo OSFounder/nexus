@@ -1,4 +1,5 @@
 
+(function() {
 
     var firebaseConfig = {
         apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
@@ -76,3 +77,4 @@
               console.log('not logged in')
           }
 });
+}());
