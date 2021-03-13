@@ -22,4 +22,10 @@ input {
 button {
     padding: 14px 30px;
     background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-color: #fce1e0;
+    color: white;
 }
