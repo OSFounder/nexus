@@ -20,6 +20,8 @@ const txtPword = document.getElementById('pass_field');
 const binSignIn = document.getElementById('log-in');
 const binSignUp = document.getElementById('sign-up');
 const binLogOut = document.getElementById('log-out');
+alert(txtEmail)
+alert(txtPword)
 binSignIn.addEventListener('click', e => {
   var email = txtEmail.value;
   var password = txtPword.value;
