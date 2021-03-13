@@ -15,8 +15,8 @@
   firebase.analytics();
 
 //get data from form
-const txtEmail = document.getElementById('email_field').value;
-const txtPword = document.getElementById('pass_field').value;
+const txtEmail = document.getElementById('email_field');
+const txtPword = document.getElementById('pass_field');
 const binSignIn = document.getElementById('log-in');
 const binSignUp = document.getElementById('sign-up');
 const binLogOut = document.getElementById('log-out');
