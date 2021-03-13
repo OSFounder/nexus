@@ -45,6 +45,7 @@ button {
    font-family: arial;
    background-color: white;
    color: black;
+   text-transform: capitalize;
 }
 
 #redirect:hover {
