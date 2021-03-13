@@ -7,6 +7,8 @@
    const binSignIn = document.getElementById('log-in');
    const binSignUp = document.getElementById('sign-up');
    const binSignOut = document.getElementById('log-out');
+   const fname = document.getElementById('fname');
+   const lname = document.getElementById('lname');
 
 function signInWithEmailPassword() {
   var email = txtEmail.value;
@@ -35,10 +37,7 @@ function signUpWithEmailPassword() {
       var user = firebase.auth().currentUser;
 
       user.updateProfile({
-        displayName: document.getElementById('dname').value;
-        firstName: document.getElementById('fname').value;
-        lastName: document.getElementById('lname').value;
-        email: document.getElementById('email_field').value;
+         //TODO: add updates here
       }).then(function() {
         // Update successful.
         var user = userCredential.user;
