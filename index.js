@@ -1,6 +1,6 @@
 (function() {
    //initialize application
-   const config = {
+   const firebaseConfig = {
       apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
       authDomain: "nexus-database-b7220.firebaseapp.com",
       databaseURL: "https://nexus-database-b7220-default-rtdb.firebaseio.com",
@@ -11,6 +11,7 @@
       measurementId: "G-RQNWQVCW9T"
 };
   firebase.initializeApp(config);
+  firebase.analytics();
     
    const txtEmail = document.getElementById('email_field');
    const txtPword = document.getElementById('pass_field');
