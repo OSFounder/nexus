@@ -2,6 +2,9 @@ form {
     width: 500px;
     padding-top: 75px;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 input {
