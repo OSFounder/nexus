@@ -32,7 +32,20 @@ function signUpWithEmailPassword() {
   firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
       // Signed in 
-      var user = userCredential.user;
+      var user = firebase.auth().currentUser;
+
+      user.updateProfile({
+        displayName: document.getElementById('dname').value;
+        firstName: document.getElementById('fname').value;
+        lastName: document.getElementById('lname').value;
+        email: document.getElementById('email_field').value;
+      }).then(function() {
+        // Update successful.
+        var user = userCredential.user;
+      }).catch(function(error) {
+        // An error happened.
+      });
+
       sendEmailVerification();
       // ...
     })
