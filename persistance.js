@@ -1,6 +1,6 @@
 function setPersistenceSession() {
-  var email = "...";
-  var password = "...";
+   var email = document.getElementById('email_field').value;
+   var password = document.getElementById('pass_field').value;
 
   // [START auth_set_persistence_session]
   firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
