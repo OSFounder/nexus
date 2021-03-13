@@ -41,7 +41,12 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
-    <script type="module" src="https://nexuslive.tech/index.js"></script>
+    <script type="module">
+      import firebase from "firebase/app";
+      import "firebase/auth";
+    </script>
+
+    <script src="https://nexuslive.tech/index.js"></script>
     <script src="https://nexuslive.tech/authenticate.js"></script>
     </body>
     </html>
