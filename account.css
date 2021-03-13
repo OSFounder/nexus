@@ -42,13 +42,13 @@ button {
     color: black;
 }
 
-a {
+#redirect {
     padding: 14px 30px;
     background-color: white;
     color: black;
 }
 
-a: hover {
+#redirect:hover {
      border-bottom: 2px solid black;
 }
 button:hover {
