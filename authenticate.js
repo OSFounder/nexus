@@ -1,4 +1,5 @@
-   
+   constructor(private afAuth: AngularFireAuth){}
+
    authStateListener();
     
    const txtEmail = document.getElementById('email_field');
@@ -68,27 +69,41 @@ function sendPasswordReset() {
     });
   // [END auth_send_password_reset]
 }
-binSignIn.addEventListener('click', e=> {
-   signInWithEmailPassword();
-   var email = txtEmail.value;
-   var password = txtPword.value;
-   makeEmailCredential(email, password);
-   document.getElementById('email_field').value = ''
-   document.getElementById('pass_field').value = ''
-   authStateListener();
-});
+try {
+   binSignIn.addEventListener('click', e=> {
+      signInWithEmailPassword();
+      var email = txtEmail.value;
+      var password = txtPword.value;
+      makeEmailCredential(email, password);
+      document.getElementById('email_field').value = ''
+      document.getElementById('pass_field').value = ''
+      authStateListener();
+   });
+}
+catch {
+   console.log('ERROR 404: Sign In not located.')
+}
 
-binSignUp.addEventListener('click', e=> {
-   signUpWithEmailPassword();
-   var email = txtEmail.value;
-   var password = txtPword.value;
-   makeEmailCredential(email, password);
-   document.getElementById('email_field').value = ''
-   document.getElementById('pass_field').value = ''
-   authStateListener();
-});
-
-binSignOut.addEventListener('click', e=> {
-    signOut();
-    authStateListener();
-});
+try {
+   binSignUp.addEventListener('click', e=> {
+      signUpWithEmailPassword();
+      var email = txtEmail.value;
+      var password = txtPword.value;
+      makeEmailCredential(email, password);
+      document.getElementById('email_field').value = ''
+      document.getElementById('pass_field').value = ''
+      authStateListener();
+   });
+}
+catch {
+   console.log('ERROR 404: Sign Up not located.')
+}
+try {
+   binSignOut.addEventListener('click', e=> {
+       signOut();
+       authStateListener();
+   });
+}
+catch {
+   console.log('ERROR 404: Sign Out not located.')
+}
