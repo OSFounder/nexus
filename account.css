@@ -7,6 +7,20 @@
     text-transform: uppercase;
 }
 
+#formR {
+    width: 500px;
+    padding-top: 75px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h3 {
+    padding: 14px 20px;
+    background-color: white;
+}
+
 input {
     width: 500px;
     padding: 14px;
