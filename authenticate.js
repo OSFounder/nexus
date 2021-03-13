@@ -68,10 +68,14 @@ function sendPasswordReset() {
 }
 binSignIn.addEventListener('click', e=> {
    signInWithEmailPassword();
+   document.getElementById('email_field').value = ''
+   document.getElementById('pass_field').value = ''
 });
 
 binSignUp.addEventListener('click', e=> {
    signUpWithEmailPassword();
+   document.getElementById('email_field').value = ''
+   document.getElementById('pass_field').value = ''
 });
 
               
