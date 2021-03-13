@@ -68,6 +68,8 @@ function sendPasswordReset() {
 }
 binSignIn.addEventListener('click', e=> {
    signInWithEmailPassword();
+   var email = txtEmail.value;
+   var password = txtPword.value;
    makeEmailCredential(email, password);
    document.getElementById('email_field').value = ''
    document.getElementById('pass_field').value = ''
@@ -76,6 +78,8 @@ binSignIn.addEventListener('click', e=> {
 
 binSignUp.addEventListener('click', e=> {
    signUpWithEmailPassword();
+   var email = txtEmail.value;
+   var password = txtPword.value;
    makeEmailCredential(email, password);
    document.getElementById('email_field').value = ''
    document.getElementById('pass_field').value = ''
