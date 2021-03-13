@@ -1,1 +1,20 @@
+form {
+    width: 500px;
+    padding-top: 75px;
+    margin: 0 auto;
+}
 
+input {
+    width: 500px;
+    padding: 14px 20px;
+    text-align: left;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    padding: 14px 20px;
+    text-align: center;
+    background-color: white;
+}
