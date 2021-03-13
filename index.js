@@ -51,17 +51,11 @@ function authStateListener() {
       // https://firebase.google.com/docs/reference/js/firebase.User
       var uid = user.uid;
       console.log(uid)
-      document.getElementById('sign-out').classList.remove('hiden');
-      document.getElementById('sign-in').classList.add('hiden');
-      document.getElementById('sign-up').classList.add('hiden');
       // ...
     } else {
       // User is signed out
       // ...
       console.log('logged out')
-      document.getElementById('sign-out').classList.add('hiden');
-      document.getElementById('sign-in').classList.remove('hiden');
-      document.getElementById('sign-up').classList.remove('hiden');
     }
   });
   // [END auth_state_listener]
