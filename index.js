@@ -82,10 +82,10 @@ function authWithCredential(credential) {
   // [START auth_signin_credential]
   // Sign in with the credential from the user.
   firebase.auth()
+    .signInWithCredential(credential)
     .then((result) => {
       // Signed in 
       // ...
-      signInWithCredential(credential)
       setPersistenceSession()
     })
     .catch((error) => {
