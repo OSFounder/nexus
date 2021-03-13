@@ -1,6 +1,6 @@
 
 
-   await authStateListener();
+   authStateListener();
     
    const txtEmail = document.getElementById('email_field');
    const txtPword = document.getElementById('pass_field');
