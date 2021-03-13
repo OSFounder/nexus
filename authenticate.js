@@ -70,12 +70,14 @@ binSignIn.addEventListener('click', e=> {
    signInWithEmailPassword();
    document.getElementById('email_field').value = ''
    document.getElementById('pass_field').value = ''
+   authStateListener();
 });
 
 binSignUp.addEventListener('click', e=> {
    signUpWithEmailPassword();
    document.getElementById('email_field').value = ''
    document.getElementById('pass_field').value = ''
+   authStateListener();
 });
 
               
