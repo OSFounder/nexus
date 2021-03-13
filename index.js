@@ -53,7 +53,6 @@ function authStateListener() {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
       var uid = user.uid;
-      console.log(uid)
       document.getElementById('log-out').classList.remove('hiden');
       document.getElementById('log-in').classList.add('hiden');
       document.getElementById('sign-up').classList.add('hiden');
@@ -61,7 +60,6 @@ function authStateListener() {
     } else {
       // User is signed out
       // ...
-      console.log('logged out')
       document.getElementById('log-out').classList.add('hiden');
       document.getElementById('log-in').classList.remove('hiden');
       document.getElementById('sign-up').classList.remove('hiden');
