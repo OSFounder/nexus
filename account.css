@@ -32,3 +32,7 @@ button:hover {
     background-color: #fce1e0;
     color: white;
 }
+
+.hiden {
+    transform: scale(0);
+}
