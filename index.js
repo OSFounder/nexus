@@ -1,5 +1,4 @@
-import firebase from 'firebase'
-require('firebase/auth')
+
    //initialize application
    const firebaseConfig = {
       apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
