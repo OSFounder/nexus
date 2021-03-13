@@ -109,4 +109,5 @@ firebase.auth().onAuthStateChanged((user) => {
       document.getElementById('sign-in').classList.remove('hiden');
       document.getElementById('sign-up').classList.remove('hiden');
     }
+});
    
