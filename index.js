@@ -1,4 +1,4 @@
-
+(function() {
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
     apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
@@ -82,3 +82,4 @@ function sendPasswordReset() {
     });
   // [END auth_send_password_reset]
 }
+}());
