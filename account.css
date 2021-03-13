@@ -6,15 +6,20 @@ form {
 
 input {
     width: 500px;
-    padding: 14px 20px;
+    padding: 14px;
     text-align: left;
     background-color: white;
     display: block;
 }
 
-binButtons {
-    padding: 14px 20px;
+#binButtons {
+    width: 528px;
     text-align: center;
     background-color: white;
     display: block;
+}
+
+button {
+    padding: 14px 30px;
+    background-color: white;
 }
