@@ -1,80 +1,87 @@
+/ These samples are intended for Web so this import would normally be
+// done in HTML however using modules here is more convenient for
+// ensuring sample correctness offline
+import firebase from "firebase/app";
+import "firebase/auth";
 
-(function() {
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
+    authDomain: "nexus-database-b7220.firebaseapp.com",
+    databaseURL: "https://nexus-database-b7220-default-rtdb.firebaseio.com",
+    projectId: "nexus-database-b7220",
+    storageBucket: "nexus-database-b7220.appspot.com",
+    messagingSenderId: "75486796978",
+    appId: "1:75486796978:web:d4fb7013ad6131a6257dab",
+    measurementId: "G-RQNWQVCW9T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
-    var firebaseConfig = {
-        apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
-        authDomain: "nexus-database-b7220.firebaseapp.com",
-        projectId: "nexus-database-b7220",
-        storageBucket: "nexus-database-b7220.appspot.com",
-        messagingSenderId: "75486796978",
-        appId: "1:75486796978:web:d4fb7013ad6131a6257dab",
-        measurementId: "G-RQNWQVCW9T"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    
-      var user = firebase.auth().currentUser;
-
-      if (user) {
-        // User is signed in.
-      } else {
-        // No user is signed in.
-      }
-
-      //get data
-      const txtemail = document.getElementById('email_field');
-      const txtpword = document.getElementById('pass_field');
-      const binsignin = document.getElementById('log-in');
-      const binsignup = document.getElementById('sign-up')
-      const binsignout = document.getElementById('log-out');
- 
-      //listen for sign in attempt
-      binsignin.addEventListener('click', e => {
-          //get email and pword
-          const email = txtemail.value;
-          const pass = txtpword.value;
-          const auth = firebase.auth();
-          //sign in
-          const promise = auth.signInWithEmailAndPassword(email, pass);
-          promise.then((userCredential) => {
-            // Signed in 
-            var user = userCredential.user;
-            // ...
-          })
-          .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // ..
-         });
-          
-      });
-        binsignup.addEventListener('click', e => {
-          //get email and pword
-          const email = txtemail.value;
-          const pass = txtpword.value;
-          const auth = firebase.auth();
-          //sign in
-          const promise = auth.createUserWithEmailAndPassword(email, pass);
-          promise.then((userCredential) => {
-            // Signed in 
-            var user = userCredential.user;
-            // ...
-          })
-          .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // ..
-          });
-          
-      });
-       
-      firebase.auth().onAuthStateChanged(function(user) {
-          if (user) {
-            // User is signed in.
-              console.log(user)
-          } else {
-            // No user is signed in.
-              console.log('not logged in')
-          }
+//get data from form
+const txtEmail = document.getElementById('email_field').value;
+const txtPword = document.getElementById('pass_field').value;
+const binSignIn = document.getElementById('log-in');
+const binSignUp = document.getElementById('sign-up');
+const binLogOut = document.getElementById('log-out');
+binSignIn.addEventListener(e => {
+  var email = txtEmail.value;
+  var password = txtPword.value;
+  // [START auth_signin_password]
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
+  // [END auth_signin_password]
 });
-}());
+
+binSignUp.addEventListener(e => {
+  var email = txtEmail.value;
+  var password = textPword.value;
+  // [START auth_signup_password]
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      // Signed in 
+      var user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ..
+    });
+  // [END auth_signup_password]
+});
+
+function sendEmailVerification() {
+  // [START auth_send_email_verification]
+  firebase.auth().currentUser.sendEmailVerification()
+    .then(() => {
+      // Email verification sent!
+      // ...
+    });
+  // [END auth_send_email_verification]
+}
+
+function sendPasswordReset() {
+  const email = "sam@example.com";
+  // [START auth_send_password_reset]
+  firebase.auth().sendPasswordResetEmail(email)
+    .then(() => {
+      // Password reset email sent!
+      // ..
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ..
+    });
+  // [END auth_send_password_reset]
+}
