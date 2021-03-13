@@ -5,12 +5,9 @@
 }
 
 #formR {
-    width: 500px;
+    width: 528px;
     padding-top: 75px;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
 }
 
 h3 {
@@ -56,4 +53,8 @@ button:hover {
 
 .hiden {
     transform: scale(0);
+}
+
+#sign-up {
+    width: 528px;
 }
