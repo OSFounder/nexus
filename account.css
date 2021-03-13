@@ -29,8 +29,7 @@ button {
 }
 
 button:hover {
-    background-color: #fce1e0;
-    color: white;
+    border-bottom: 2px solid black;
 }
 
 .hiden {
