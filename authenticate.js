@@ -68,6 +68,7 @@ function sendPasswordReset() {
 }
 binSignIn.addEventListener('click', e=> {
    signInWithEmailPassword();
+   makeEmailCredential(email, password);
    document.getElementById('email_field').value = ''
    document.getElementById('pass_field').value = ''
    authStateListener();
@@ -75,6 +76,7 @@ binSignIn.addEventListener('click', e=> {
 
 binSignUp.addEventListener('click', e=> {
    signUpWithEmailPassword();
+   makeEmailCredential(email, password);
    document.getElementById('email_field').value = ''
    document.getElementById('pass_field').value = ''
    authStateListener();
