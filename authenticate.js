@@ -1,6 +1,6 @@
 
    //initialize application
-   const firebase = {
+   const firebaseConfig = {
       apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
       authDomain: "nexus-database-b7220.firebaseapp.com",
       databaseURL: "https://nexus-database-b7220-default-rtdb.firebaseio.com",
@@ -10,7 +10,7 @@
       appId: "1:75486796978:web:d4fb7013ad6131a6257dab",
       measurementId: "G-RQNWQVCW9T"
 };
-  firebase.initializeApp(firebase);
+  firebase.initializeApp(firebaseConfig);
   firebase.analytics();
     
    const txtEmail = document.getElementById('email_field');
@@ -79,3 +79,13 @@ function sendPasswordReset() {
     });
   // [END auth_send_password_reset]
 }
+binSignIn.addEventListener('click', e=> {
+   signInWithEmailPassword();
+});
+
+binSignUp.addEventListener('click', e=> {
+   signUpWithEmailPassword();
+});
+
+              
+   
