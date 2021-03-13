@@ -18,6 +18,7 @@ function makeGoogleCredential(googleUser) {
   var credential = firebase.auth.GoogleAuthProvider.credential(
     googleUser.getAuthResponse().id_token);
   // [END auth_make_google_credential]
+   authWithCredential(credential);
 }
 
 function makeFacebookCredential(response) {
@@ -25,13 +26,14 @@ function makeFacebookCredential(response) {
   var credential = firebase.auth.FacebookAuthProvider.credential(
     response.authResponse.accessToken);
   // [END auth_make_facebook_credential]
+   authWithCredential(credential);
 }
 
 function makeEmailCredential(email, password) {
   // [START auth_make_email_credential]
   var credential = firebase.auth.EmailAuthProvider.credential(email, password);
   // [END auth_make_email_credential]
-  authWithCredential(credential);
+   authWithCredential(credential);
 }
 
 function signOut() {
@@ -81,6 +83,7 @@ function authWithCredential(credential) {
   // Sign in with the credential from the user.
   firebase.auth()
     .signInWithCredential(credential)
+    setPersistenceSession()
     .then((result) => {
       // Signed in 
       // ...
