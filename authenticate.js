@@ -6,6 +6,16 @@
    const binSignUp = document.getElementById('sign-up');
    const binSignOut = document.getElementById('log-out');
 
+var user = firebase.auth().currentUser;
+
+if (user) {
+  // User is signed in.
+  authStateListener();
+  
+} else {
+  // No user is signed in.
+}
+
 function signInWithEmailPassword() {
   var email = txtEmail.value;
   var password = txtPword.value;
