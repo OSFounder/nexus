@@ -22,7 +22,7 @@
    binSignIn.addEventListener('click', e => {
        const email = txtEmail.value;
        const pass = txtPword.value;
-       promise = firebase.auth.signInWithEmailAndPassword(email, pass)
+       promise = firebase.auth().signInWithEmailAndPassword(email, pass)
        promse.catch(e => console.log(e.message));
        
    });
