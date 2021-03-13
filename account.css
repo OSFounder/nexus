@@ -2,9 +2,6 @@
     width: 500px;
     padding-top: 75px;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
 }
 
 #formR {
@@ -43,9 +40,11 @@ button {
 }
 
 #redirect {
-    padding: 14px 30px;
-    background-color: white;
-    color: black;
+   padding: 14px 30px;
+   font-size: 13.3333px;
+   font-family: arial;
+   background-color: white;
+   color: black;
 }
 
 #redirect:hover {
