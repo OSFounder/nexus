@@ -48,7 +48,6 @@
          });
 
       });
-@@ -60,11 +59,10 @@
             var user = userCredential.user;
             // ...
           })
