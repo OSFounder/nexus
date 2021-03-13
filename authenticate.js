@@ -91,6 +91,7 @@ try {
       document.getElementById('email_field').value = ''
       document.getElementById('pass_field').value = ''
       authStateListener();
+      location.replace('https://nexuslive.tech/');
    });
 }
 catch {
@@ -99,6 +100,7 @@ catch {
 
 try {
    binSignUp.addEventListener('click', e=> {
+      signOut()
       signUpWithEmailPassword();
       var email = txtEmail.value;
       var password = txtPword.value;
@@ -106,6 +108,7 @@ try {
       document.getElementById('email_field').value = ''
       document.getElementById('pass_field').value = ''
       authStateListener();
+      location.replace('https://nexuslive.tech/');
    });
 }
 catch {
