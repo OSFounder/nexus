@@ -29,6 +29,10 @@ button {
 }
 
 button:hover {
+    -webkit-transition: border-bottom 1s linear;
+    -moz-transition: border-bottom 1s linear;
+    -ms-transition: border-bottom 1s linear;
+    -o-transition: border-bottom 1s linear;
     border-bottom: 2px solid black;
 }
 
