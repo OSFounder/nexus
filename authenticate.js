@@ -1,12 +1,11 @@
-
+   
+   authStateListener();
     
    const txtEmail = document.getElementById('email_field');
    const txtPword = document.getElementById('pass_field');
    const binSignIn = document.getElementById('log-in');
    const binSignUp = document.getElementById('sign-up');
    const binSignOut = document.getElementById('log-out');
-
-   authStateListener();
 
 function signInWithEmailPassword() {
   var email = txtEmail.value;
