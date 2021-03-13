@@ -59,6 +59,9 @@ function authStateListener() {
       // User is signed out
       // ...
       console.log('logged out')
+      document.getElementById('sign-out').classList.add('hiden');
+      document.getElementById('sign-in').classList.remove('hiden');
+      document.getElementById('sign-up').classList.remove('hiden');
     }
   });
   // [END auth_state_listener]
