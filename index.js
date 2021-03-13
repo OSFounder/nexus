@@ -1,6 +1,4 @@
 (function() {
-
-
     var firebaseConfig = {
         apiKey: "AIzaSyAkuL0kZgwpJZpv0eJF8N_fh3mpsYCrFNQ",
         authDomain: "nexus-database-b7220.firebaseapp.com",
@@ -34,31 +32,27 @@
           const auth = firebase.auth();
           //sign in
           const promise = auth.signInWithEmailAndPassword(email, pass);
-          promise.then((userCredential) => {
-            // Signed in 
-            var user = userCredential.user;
-            // ...
-          })
           promise.catch((error) => {
-          .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
-            // ..
-            print(errorMessage);
-         });
-
+            console.log(errorCode);
+            console.log(errorMessage);
+          
       });
-            var user = userCredential.user;
-            // ...
-          })
+        binsignup.addEventListener('click', e => {
+          //get email and pword
+          const email = txtemail.value;
+          const pass = txtpword.value;
+          const auth = firebase.auth();
+          //sign in
+          const promise = auth.createUserWithEmailAndPassword(email, pass);
           promise.catch((error) => {
-          .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
             // ..
-            print(errorMessage);
-          });
-
+             console.log(errorCode);
+              console.log(errorMessage);
+          
       });
        
       firebase.auth().onAuthStateChanged(function(user) {
