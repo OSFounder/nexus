@@ -52,10 +52,6 @@ function signUpWithEmailPassword() {
 
       user.updateProfile({
          //TODO: add updates here
-         displayName: dname
-         firstName: fname
-         lastname: lname
-         email: txtEmail
       }).then(function() {
         // Update successful.
         var user = userCredential.user;
