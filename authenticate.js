@@ -11,7 +11,7 @@
    const binSignOut = document.getElementById('log-out');
    const fname = document.getElementById('fname');
    const lname = document.getElementById('lname');
-   var dname = document.getElementById('
+   var dname = document.getElementById('dname');
 
 function signInWithEmailPassword() {                    
   var email = txtEmail.value;
@@ -52,7 +52,8 @@ function signUpWithEmailPassword() {
 
       user.updateProfile({
          //TODO: add updates here
-         displayName:
+         displayName: dname;
+         Name: fname;
       }).then(function() {
         // Update successful.
         var user = userCredential.user;
