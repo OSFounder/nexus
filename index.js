@@ -70,7 +70,7 @@ function authStateListener() {
 
 function setLanguageCode() {
   // [START auth_set_language_code]
-  firebase.auth().languageCode = 'it';
+  firebase.auth().languageCode = 'en';
   // To apply the default browser preference instead of explicitly setting it.
   // firebase.auth().useDeviceLanguage();
   // [END auth_set_language_code]
