@@ -98,7 +98,6 @@ try {
       document.getElementById('email_field').value = ''
       document.getElementById('pass_field').value = ''
       authStateListener();
-      location.replace('https://nexuslive.tech/');
    });
 }
 catch {
