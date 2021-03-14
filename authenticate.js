@@ -15,6 +15,7 @@
 
 function signInWithEmailPassword() {                    
   var email = txtEmail.value;
+  var email = email.toLowerCase();
   var password = txtPword.value;
   // [START auth_signin_password]
   firebase.auth().signInWithEmailAndPassword(email, password)
@@ -36,7 +37,7 @@ const sendVerificationEmail = () => {
       window.location.assign('../index.html');
    })
    .catch( error => {
-          console.error('could not send verification email, email Cam.osproject@gmail.com');
+          console.error('error');
           })
 }
 
