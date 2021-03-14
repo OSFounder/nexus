@@ -30,6 +30,16 @@ function signInWithEmailPassword() {
   // [END auth_signin_password]
 }
 
+const sendVerificationEmail = () => {
+   auth.currentuser.sendEmailVerification()
+   .then(() => {
+      window.location.assign('../index.html');
+   })
+   .catch((error) {
+          console.error('could not send verification email, email Cam.osproject@gmail.com');
+          })
+}
+
 function signUpWithEmailPassword() {
   var email = txtEmail.value;
   var password = txtPword.value;
@@ -38,6 +48,7 @@ function signUpWithEmailPassword() {
     .then((userCredential) => {
       // Signed in 
       var user = firebase.auth().currentUser;
+      sendVerificationEmail();
 
       user.updateProfile({
          //TODO: add updates here
