@@ -36,6 +36,7 @@ const sendVerificationEmail = () => {
    firebase.auth().currentUser.sendEmailVerification()
    .then(() => {
       //verified
+      window.alert('Verification sent, check your inbox (may be in your spam files)');
    })
    .catch( error => {
           console.error('error');
@@ -79,6 +80,7 @@ function sendPasswordReset() {
     .then(() => {
       // Password reset email sent!
       // ..
+      window.alert('Email sent, check your inbox (the email may be in your spam files)');
     })
     .catch((error) => {
       var errorCode = error.code;
