@@ -32,7 +32,7 @@ function signInWithEmailPassword() {
 }
 
 const sendVerificationEmail = () => {
-   auth.currentUser.sendEmailVerification()
+   auth.currentuser.sendEmailVerification()
    .then(() => {
       //verified
    })
