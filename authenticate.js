@@ -35,7 +35,7 @@ const sendVerificationEmail = () => {
    .then(() => {
       window.location.assign('../index.html');
    })
-   .catch((error) {
+   .catch( error => {
           console.error('could not send verification email, email Cam.osproject@gmail.com');
           })
 }
