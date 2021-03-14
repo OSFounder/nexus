@@ -34,7 +34,7 @@ function signInWithEmailPassword() {
 const sendVerificationEmail = () => {
    auth.currentUser.sendEmailVerification()
    .then(() => {
-      window.location.assign('../index');
+      //verified
    })
    .catch( error => {
           console.error('error');
@@ -120,7 +120,6 @@ try {
       document.getElementById('email_field').value = ''
       document.getElementById('pass_field').value = ''
       authStateListener();
-      window.location.assign('../index');
    });
 }
 catch {
