@@ -8,6 +8,7 @@
    const txtPword = document.getElementById('pass_field');
    const binSignIn = document.getElementById('log-in');
    const binSignUp = document.getElementById('sign-up');
+   const binForgot = document.getElementById('forgot-pword');
    const binSignOut = document.getElementById('log-out');
    const fname = document.getElementById('fname');
    const lname = document.getElementById('lname');
@@ -41,6 +42,7 @@ const sendVerificationEmail = () => {
           })
 }
 
+
 function signUpWithEmailPassword() {
   var email = txtEmail.value;
   var password = txtPword.value;
@@ -69,18 +71,9 @@ function signUpWithEmailPassword() {
   // [END auth_signup_password]
 }
 
-function sendEmailVerification() {
-  // [START auth_send_email_verification]
-  firebase.auth().currentUser.sendEmailVerification()
-    .then(() => {
-      // Email verification sent!
-      // ...
-    });
-  // [END auth_send_email_verification]
-}
 
 function sendPasswordReset() {
-  const email = "sam@example.com";
+  const email = txtEmail.value;
   // [START auth_send_password_reset]
   firebase.auth().sendPasswordResetEmail(email)
     .then(() => {
@@ -124,6 +117,14 @@ try {
 }
 catch {
    console.log('ERROR 404: Sign Up not located.')
+}
+try {
+   binForgot.addEventListener('click', e=> {
+      sendPasswordReset();
+   });
+}
+catch {
+   console.log('ERROR 404: Forgot not located.')
 }
 try {
    binSignOut.addEventListener('click', e=> {
