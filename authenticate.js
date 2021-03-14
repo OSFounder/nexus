@@ -31,7 +31,7 @@ function signInWithEmailPassword() {
 }
 
 const sendVerificationEmail = () => {
-   auth.currentuser.sendEmailVerification()
+   auth.currentUser.sendEmailVerification()
    .then(() => {
       window.location.assign('../index.html');
    })
