@@ -1,6 +1,8 @@
 
 
    authStateListener();
+
+
     
    const txtEmail = document.getElementById('email_field');
    const txtPword = document.getElementById('pass_field');
@@ -9,8 +11,9 @@
    const binSignOut = document.getElementById('log-out');
    const fname = document.getElementById('fname');
    const lname = document.getElementById('lname');
+   var dname = document.getElementById('
 
-function signInWithEmailPassword() {
+function signInWithEmailPassword() {                    
   var email = txtEmail.value;
   var password = txtPword.value;
   // [START auth_signin_password]
@@ -38,14 +41,13 @@ function signUpWithEmailPassword() {
 
       user.updateProfile({
          //TODO: add updates here
+         displayName:
       }).then(function() {
         // Update successful.
         var user = userCredential.user;
       }).catch(function(error) {
         // An error happened.
       });
-
-      sendEmailVerification();
       // ...
     })
     .catch((error) => {
