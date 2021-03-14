@@ -32,7 +32,7 @@ function signInWithEmailPassword() {
 }
 
 const sendVerificationEmail = () => {
-   auth.currentuser.sendEmailVerification()
+   firebase.auth().currentUser.sendEmailVerification()
    .then(() => {
       //verified
    })
