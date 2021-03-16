@@ -34,13 +34,33 @@ catch(e) {
 }
 authStateListener();
 if(user) {
+   try {
    binSignOut.classList.remove('hiden');
+}
+catch(e) {
+   console.error(e)
+}
 }
 
 else {
-   binSignIn.classList.remove('hiden');
-   binSignUp.classList.remove('hiden');
-   binForgot.classList.remove('hiden');
+     try {
+      binSignIn.classList.remove('hiden');
+   }
+   catch(e) {
+      console.error(e)
+   }
+   try {
+      binSignOut.classList.remove('hiden');
+   }
+   catch(e) {
+      console.error(e)
+   }
+   try {
+      binForgot.classList.remove('hiden');
+   }
+   catch(e) {
+      console.error(e)
+   }
 }
   
 
