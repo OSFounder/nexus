@@ -53,16 +53,70 @@ function authStateListener() {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
       var uid = user.uid;
-      document.getElementById('log-out').classList.remove('hiden');
-      document.getElementById('log-in').classList.add('hiden');
-      document.getElementById('redirect').classList.add('hiden');
-      document.getElementById('forgot-pword').classList.add('hiden');
-      document.getElementById('formR').classList.add('hiden');
+      try {
+         document.getElementById('log-out').classList.remove('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('log-in').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+       try {
+         document.getElementById('redirect').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('forgot-pword').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('formR').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
       // ...
     } else {
       // User is signed out
       // ...
-      document.getElementById('log-out').classList.add('hiden');
+      try {
+         document.getElementById('log-out').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('log-in').classList.remove('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('redirect').classList.remove('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('forgot-pword').classList.remove('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('formR').classList.remove('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
       document.getElementById('log-in').classList.remove('hiden');
       document.getElementById('redirect').classList.remove('hiden');
       document.getElementById('forgot-pword').classList.remove('hiden');
