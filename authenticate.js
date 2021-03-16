@@ -8,10 +8,30 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 var dname = document.getElementById('dname');
 
-binSignIn.classList.add('hiden');
-binSignUp.classList.add('hiden');
-binForgot.classList.add('hiden');
-binSignOut.classList.add('hiden');
+try {
+   binSignIn.classList.add('hiden');
+}
+catch(e) {
+   console.error(e)
+}
+try {
+   binSignUp.classList.add('hiden');
+}
+catch(e) {
+   console.error(e)
+}
+try {
+   binForgot.classList.add('hiden');
+}
+catch(e) {
+   console.error(e)
+}
+try {
+   binSignOut.classList.add('hiden');
+}
+catch(e) {
+   console.error(e)
+}
 authStateListener();
 if(user) {
    binSignOut.classList.remove('hiden');
