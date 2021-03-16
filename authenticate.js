@@ -9,62 +9,6 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 var dname = document.getElementById('dname');
 
-try {
-   binSignIn.classList.add('hiden');
-}
-catch(e) {
-   console.error(e)
-}
-try {
-   binRedirect.classList.add('hiden');
-}
-catch(e) {
-   console.error(e)
-}
-try {
-   binForgot.classList.add('hiden');
-}
-catch(e) {
-   console.error(e)
-}
-try {
-   binSignOut.classList.add('hiden');
-}
-catch(e) {
-   console.error(e)
-}
-authStateListener();
-if(firebase.auth().currentUser) {
-   try {
-   binSignOut.classList.remove('hiden');
-}
-catch(e) {
-   console.error(e)
-}
-}
-
-else {
-     try {
-      binSignIn.classList.remove('hiden');
-   }
-   catch(e) {
-      console.error(e)
-   }
-   try {
-      binRedirect.classList.remove('hiden');
-   }
-   catch(e) {
-      console.error(e)
-   }
-   try {
-      binForgot.classList.remove('hiden');
-   }
-   catch(e) {
-      console.error(e)
-   }
-}
-  
-
 
 function signInWithEmailPassword() {                    
   var email = txtEmail.value;
