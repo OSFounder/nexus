@@ -50,6 +50,8 @@ function authStateListener() {
   // [START auth_state_listener]
      try {
          document.getElementById('log-out').classList.add('hiden');
+         document.getElementById('email_field').classList.add('hiden');
+         document.getElementById('pass_field').classList.add('hiden');
       }
       catch(e) {
          console.error(e)
