@@ -55,7 +55,8 @@ function authStateListener() {
       var uid = user.uid;
       document.getElementById('log-out').classList.remove('hiden');
       document.getElementById('log-in').classList.add('hiden');
-      document.getElementById('sign-up').classList.add('hiden');
+      document.getElementById('redirect').classList.add('hiden');
+      document.getElementById('forgot').classList.add('hiden');
       if(document.location.pathname === "/register"){
           window.location.href = 'https://nexuslive.tech/login.html';
       }
@@ -66,6 +67,7 @@ function authStateListener() {
       document.getElementById('log-out').classList.add('hiden');
       document.getElementById('log-in').classList.remove('hiden');
       document.getElementById('redirect').classList.remove('hiden');
+      document.getElementById('forgot').classList.remove('hiden');
     }
   });
   // [END auth_state_listener]
