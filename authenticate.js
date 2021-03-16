@@ -95,8 +95,8 @@ try {
       var email = txtEmail.value;
       var password = txtPword.value;
       makeEmailCredential(email, password);
-      document.getElementById('email_field').value = ''
-      document.getElementById('pass_field').value = ''
+      document.getElementById('email_field').value;
+      document.getElementById('pass_field').value;
       authStateListener();
    });
 }
@@ -111,8 +111,8 @@ try {
       var email = txtEmail.value;
       var password = txtPword.value;
       makeEmailCredential(email, password);
-      document.getElementById('email_field').value = ''
-      document.getElementById('pass_field').value = ''
+      document.getElementById('email_field').value;
+      document.getElementById('pass_field').value;
       authStateListener();
    });
 }
