@@ -57,6 +57,7 @@ function authStateListener() {
       document.getElementById('pass_field').value='';
       try {
          document.getElementById('log-out').classList.remove('hiden');
+         document.getElementById('log-out').classList.add('bloated');
       }
       catch(e) {
          console.error(e)
@@ -91,6 +92,7 @@ function authStateListener() {
       // ...
       try {
          document.getElementById('log-out').classList.add('hiden');
+          document.getElementById('log-out').classList.remove('bloated');
       }
       catch(e) {
          console.error(e)
