@@ -5,7 +5,7 @@ function getUser() {
    }
 }
 function authenticate() {
-      await getUser();
+      this.getUser().then ( res => {
       const txtEmail = document.getElementById('email_field');
       const txtPword = document.getElementById('pass_field');
       const binSignIn = document.getElementById('log-in');
@@ -138,4 +138,6 @@ function authenticate() {
    catch {
       console.log('ERROR 404: Sign Out not located.')
    }
+      });
 }
+authenticate();
