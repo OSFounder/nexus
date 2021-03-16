@@ -34,7 +34,7 @@ catch(e) {
    console.error(e)
 }
 authStateListener();
-if(user) {
+if(firebase.auth().currentUser) {
    try {
    binSignOut.classList.remove('hiden');
 }
