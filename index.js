@@ -67,7 +67,7 @@ function authStateListener() {
       document.getElementById('log-out').classList.add('hiden');
       document.getElementById('log-in').classList.remove('hiden');
       document.getElementById('redirect').classList.remove('hiden');
-      document.getElementById('forgot').classList.remove('hiden');
+      document.getElementById('forgot-pword').classList.remove('hiden');
     }
   });
   // [END auth_state_listener]
