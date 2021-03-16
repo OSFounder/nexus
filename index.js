@@ -56,7 +56,7 @@ function authStateListener() {
       document.getElementById('log-out').classList.remove('hiden');
       document.getElementById('log-in').classList.add('hiden');
       document.getElementById('redirect').classList.add('hiden');
-      document.getElementById('forgot').classList.add('hiden');
+      document.getElementById('forgot-pword').classList.add('hiden');
       if(document.location.pathname === "/register"){
           window.location.href = 'https://nexuslive.tech/login.html';
       }
