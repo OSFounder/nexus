@@ -4,6 +4,7 @@ const binSignIn = document.getElementById('log-in');
 const binSignUp = document.getElementById('sign-up');
 const binForgot = document.getElementById('forgot-pword');
 const binSignOut = document.getElementById('log-out');
+const binRedirect = document.getElementById('redirect');
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 var dname = document.getElementById('dname');
@@ -15,7 +16,7 @@ catch(e) {
    console.error(e)
 }
 try {
-   binSignUp.classList.add('hiden');
+   binRedirect.classList.add('hiden');
 }
 catch(e) {
    console.error(e)
@@ -50,7 +51,7 @@ else {
       console.error(e)
    }
    try {
-      binSignOut.classList.remove('hiden');
+      binRedirect.classList.remove('hiden');
    }
    catch(e) {
       console.error(e)
