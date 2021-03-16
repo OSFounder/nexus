@@ -4,7 +4,7 @@ function getUser() {
       authStateListener();
    }
 }
-function authenticate {
+function authenticate() {
       await getUser();
       const txtEmail = document.getElementById('email_field');
       const txtPword = document.getElementById('pass_field');
