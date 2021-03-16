@@ -48,6 +48,36 @@ function signOut() {
 
 function authStateListener() {
   // [START auth_state_listener]
+     try {
+         document.getElementById('log-out').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('log-in').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+       try {
+         document.getElementById('redirect').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('forgot-pword').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
+      try {
+         document.getElementById('formR').classList.add('hiden');
+      }
+      catch(e) {
+         console.error(e)
+      }
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       // User is signed in, see docs for a list of available properties
