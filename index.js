@@ -53,8 +53,8 @@ function authStateListener() {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
       var uid = user.uid;
-      document.getElementById('email_field').this.value='';
-      document.getElementById('pass_field').this.value='';
+      document.getElementById('email_field').value='';
+      document.getElementById('pass_field').value='';
       try {
          document.getElementById('log-out').classList.remove('hiden');
       }
