@@ -62,3 +62,8 @@ button:hover {
 #sign-up {
     width: 14px 30px;
 }
+
+#bloated {
+  font-size: 20px;
+  width: 250px;
+}
