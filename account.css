@@ -63,7 +63,7 @@ button:hover {
     width: 14px 30px;
 }
 
-#bloated {
+.bloated {
   font-size: 20px;
   width: 250px;
 }
