@@ -18,10 +18,9 @@ if(user) {
 }
 
 else {
-   
-binSignIn.classList.remove('hiden');
-binSignUp.classList.remove('hiden');
-binForgot.classList.remove('hiden');
+   binSignIn.classList.remove('hiden');
+   binSignUp.classList.remove('hiden');
+   binForgot.classList.remove('hiden');
 }
   
 
