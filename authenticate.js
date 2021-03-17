@@ -114,7 +114,9 @@ try {
       firebase.analytics().setUserProperties({FirstName: fname});
       firebase.analytics().setUserProperties({LastName: lname});
       user.updateProfile({
-        displayName: dname;
+        displayName: dname
+        FirstName: fname
+        LastName: lname
       }).then(function() {
         // Update successful.
       }).catch(function(error) {
