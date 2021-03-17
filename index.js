@@ -91,7 +91,6 @@ function authStateListener() {
          document.getElementById('log-out').classList.remove('hiden');
          document.getElementById('log-out').classList.add('bloated');
          document.getElementById('email_field').classList.add('hiden');
-         document.getElementById('formL').classList.add('hiden');
          document.getElementById('pass_field').classList.add('hiden');
       }
       catch(e) {
@@ -130,7 +129,6 @@ function authStateListener() {
          document.getElementById('log-out').classList.remove('bloated');
          document.getElementById('email_field').classList.remove('hiden');
          document.getElementById('pass_field').classList.remove('hiden');
-         document.getElementById('formL').classList.remove('hiden');
       }
       catch(e) {
          console.error(e)
