@@ -111,6 +111,15 @@ try {
       document.getElementById('email_field').value;
       document.getElementById('pass_field').value;
       authStateListener();
+      firebase.analytics().setUserProperties({FirstName: fname});
+      firebase.analytics().setUserProperties({LastName: lname});
+      user.updateProfile({
+        displayName: dname;
+      }).then(function() {
+        // Update successful.
+      }).catch(function(error) {
+        // An error happened.
+      });
    });
 }
 catch {
