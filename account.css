@@ -76,6 +76,7 @@ button:hover {
     display: block;
     width: 81vw;
     padding-top: 75px;
+    padding-bottom: 75px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
