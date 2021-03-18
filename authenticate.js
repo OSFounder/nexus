@@ -113,21 +113,23 @@ try {
       document.getElementById('pass_field').value;
       authStateListener();
       setUserProperties();
+     try {
       user.updateProfile({
         displayName: dname
-        try {
-          firstName: fname
-          lastName: lname
-      }
-       catch(e) {
-        console.error(e);
-                         }
+        firstName: fname
+        lastName: lname
       }).then(function() {
         // Update successful.
       }).catch(function(error) {
         // An error happened.
+        
       });
+       
    });
+   }
+   catch(e) {
+     console.error(e);
+   }
 }
 catch {
    console.log('ERROR 404: Sign Up not located.')
