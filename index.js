@@ -121,9 +121,18 @@ function authStateListener() {
          console.error(e);
       }
       // create user page url
-       userUrl = new URL('https://nexuslive.tech/userPage.html');
-       userUrl.searchParams.append('UID', uid);
-       window.location.href = userUrl;
+       if (firebase.auth().currentUser.emailVerified) {
+          userUrl = new URL('https://nexuslive.tech/userPage.html');
+          userUrl.searchParams.append('UID', uid);
+          userUrl.searchParams.append('accountVerified', 'true');
+          window.location.href = userUrl;
+       }
+       else {
+          userUrl = new URL('https://nexuslive.tech/userPage.html');
+          userUrl.searchParams.append('UID', uid);
+          userUrl.searchParams.append('accountVerified', 'false');
+          window.location.href = userUrl;
+       }
        
     } else {
       // User is signed out
