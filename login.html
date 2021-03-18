@@ -37,6 +37,24 @@
       <button id='log-out' class='hiden'>Log out</button>
       </div>
     </div>
+    <script>
+      if (firebase.auth().currentUser) {
+        if (firebase.auth().currentUser.emailVerified) {
+               userUrl = new URL('https://nexuslive.tech/userPage.html');
+               userUrl.searchParams.append('UID', uid);
+               userUrl.searchParams.append('accountVerified', 'true');
+               window.location.href = userUrl;
+               document.getElementById('log-out').classList.remove('hiden');
+               document.getElementById('log-out').classList.add('bloated');
+            }
+            else {
+               userUrl = new URL('https://nexuslive.tech/userPage.html');
+               userUrl.searchParams.append('UID', uid);
+               userUrl.searchParams.append('accountVerified', 'false');
+               window.location.href = userUrl;
+            }
+      }
+    </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
 
