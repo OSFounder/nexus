@@ -87,10 +87,6 @@ function authStateListener() {
       var uid = user.uid;
       document.getElementById('email_field').value='';
       document.getElementById('pass_field').value='';
-      try {
-         document.getElementById('log-out').classList.remove('hiden');
-         document.getElementById('log-out').classList.add('bloated');
-      }
       catch(e) {
          console.error(e);
       }
