@@ -121,7 +121,7 @@ function authStateListener() {
          console.error(e);
       }
       // create user page url
-       userUrl = new URL('https://nexuslive.tech/login.html/');
+       userUrl = new URL('https://nexuslive.tech/userPage.html');
        userUrl.searchParams.append('UID', uid);
        window.location.href = userUrl;
        
