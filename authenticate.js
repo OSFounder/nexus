@@ -138,6 +138,7 @@ try {
    document.getElementById('logOut').addEventListener('click', e=> {
        signOut();
        authStateListener();
+       window.location.href = 'https://nexuslive.tech/';
    });
 }
 catch {
