@@ -1,11 +1,9 @@
 #formL {
-    width: 500vc;
     padding-top: 75px;
-    margin: 0 auto;
+    left: 50%;
 }
 
 #formR {
-    width: 528vc;
     padding-top: 75px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -15,19 +13,22 @@
 
 h3 {
     padding: 14px 20px;
+    width: 75vw;
     background-color: white;
 }
 
 input {
-    width: 500px;
-    padding: 14px;
+    display: block;
+    width: 75vw;
+    margin: 0 auto;
+    padding: 14px 20px;
     text-align: left;
     background-color: white;
-    display: block;
 }
 
 #binButtons {
-    width: 528px;
+    width: 88vw;
+    margin: 0 auto;
     text-align: center;
     background-color: white;
     display: block;
@@ -70,7 +71,7 @@ button:hover {
 #userInfo {
     padding: 14px 20px;
     display: block;
-    width: 528vc;
+    width: 75vw;
     padding-top: 75px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
