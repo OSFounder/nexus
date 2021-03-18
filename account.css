@@ -5,13 +5,13 @@
 
 #formR {
     padding-top: 75px;
-    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
 }
 
 h3 {
+    margin: 0 auto;
     padding: 14px 20px;
     width: 75vw;
     background-color: white;
