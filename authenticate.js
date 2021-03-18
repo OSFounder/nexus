@@ -135,7 +135,7 @@ catch {
    console.log('ERROR 404: Forgot not located.')
 }
 try {
-   binSignOut.addEventListener('click', e=> {
+   document.getElementById('logOut').addEventListener('click', e=> {
        signOut();
        authStateListener();
    });
