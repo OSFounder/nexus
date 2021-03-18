@@ -87,6 +87,8 @@ function authStateListener() {
          var uid = user.uid;
          document.getElementById('email_field').value='';
          document.getElementById('pass_field').value='';
+         document.getElementById('log-out').classList.remove('hiden');
+         document.getElementById('log-out').classList.add('bloated');
          try {
             document.getElementById('email_field').classList.add('hiden');
             document.getElementById('pass_field').classList.add('hiden');
@@ -132,11 +134,10 @@ function authStateListener() {
              userUrl.searchParams.append('UID', uid);
              userUrl.searchParams.append('accountVerified', 'false');
              window.location.href = userUrl;
-             document.getElementById('log-out').classList.remove('hiden');
-             document.getElementById('log-out').classList.add('bloated');
           }
 
-      } else {
+      }
+      else {
          // User is signed out
          // ...
          try {
