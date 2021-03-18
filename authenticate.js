@@ -115,8 +115,13 @@ try {
       setUserProperties();
       user.updateProfile({
         displayName: dname
-        firstName: fname
-        lastName: lname
+        try {
+          firstName: fname
+          lastName: lname
+      }
+       catch(e) {
+        console.error(e);
+                         }
       }).then(function() {
         // Update successful.
       }).catch(function(error) {
