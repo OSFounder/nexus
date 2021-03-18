@@ -30,7 +30,7 @@ input {
 
 #binButtons {
     width: 75vw;
-    padding-left: 40px;
+    padding: 0px 20px;
     margin: 0 auto;
     text-align: center;
     background-color: white;
@@ -81,11 +81,4 @@ button:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-}
-
-#logOut {
-    padding: 14px 40px;
-    display: block;
-    width: 100%;
-    margin: 0 auto
 }
