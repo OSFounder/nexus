@@ -131,12 +131,16 @@ function authStateListener() {
           userUrl.searchParams.append('UID', uid);
           userUrl.searchParams.append('accountVerified', 'true');
           window.location.href = userUrl;
+          document.getElementById('log-out').classList.remove('hiden');
+          document.getElementById('log-out').classList.add('bloated');
        }
        else {
           userUrl = new URL('https://nexuslive.tech/userPage.html');
           userUrl.searchParams.append('UID', uid);
           userUrl.searchParams.append('accountVerified', 'false');
           window.location.href = userUrl;
+          document.getElementById('log-out').classList.remove('hiden');
+          document.getElementById('log-out').classList.add('bloated');
        }
        
     } else {
