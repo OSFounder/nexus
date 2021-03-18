@@ -51,7 +51,6 @@ function signUpWithEmailPassword() {
     .then((userCredential) => {
       // Signed in 
       var user = firebase.auth().currentUser;
-      sendVerificationEmail();
 
       user.updateProfile({
          //TODO: add updates here
@@ -97,7 +96,6 @@ try {
       document.getElementById('email_field').value;
       document.getElementById('pass_field').value;
       authStateListener();
-      profileRedirect();
    });
 }
 catch {
@@ -123,7 +121,6 @@ try {
       }).catch(function(error) {
         // An error happened.
       });
-      profileRedirect();
    });
 }
 catch {
