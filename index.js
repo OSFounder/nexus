@@ -87,9 +87,6 @@ function authStateListener() {
          var uid = user.uid;
          document.getElementById('email_field').value='';
          document.getElementById('pass_field').value='';
-         catch(e) {
-            console.error(e);
-         }
          try {
             document.getElementById('email_field').classList.add('hiden');
             document.getElementById('pass_field').classList.add('hiden');
