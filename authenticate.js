@@ -116,8 +116,6 @@ try {
      try {
       user.updateProfile({
         displayName: dname
-        firstName: fname
-        lastName: lname
       }).then(function() {
         // Update successful.
       }).catch(function(error) {
