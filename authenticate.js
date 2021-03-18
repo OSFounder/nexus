@@ -97,6 +97,7 @@ try {
       document.getElementById('email_field').value;
       document.getElementById('pass_field').value;
       authStateListener();
+      profileRedirect();
    });
 }
 catch {
@@ -122,6 +123,7 @@ try {
       }).catch(function(error) {
         // An error happened.
       });
+      profileRedirect();
    });
 }
 catch {
