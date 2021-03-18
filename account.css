@@ -1,10 +1,12 @@
 #formL {
     padding-top: 75px;
+    padding-bottom: 75px;
     margin: 0 auto;
 }
 
 #formR {
     padding-top: 75px;
+    padding-bottom: 75px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
