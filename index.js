@@ -94,36 +94,36 @@ function authStateListener() {
          document.getElementById('pass_field').classList.add('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       try {
          document.getElementById('log-in').classList.add('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
        try {
          document.getElementById('redirect').classList.add('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       try {
          document.getElementById('forgot-pword').classList.add('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       try {
          document.getElementById('formR').classList.add('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       // create user page url
-       userUrl = new URL('https://nexuslive.tech/login.html/')
-       userUrl.searchParams.append('UID', uid)
-       window.location.href(userUrl)
+       userUrl = new URL('https://nexuslive.tech/login.html/');
+       userUrl.searchParams.append('UID', uid);
+       window.location.href = userURL;
        
     } else {
       // User is signed out
@@ -135,31 +135,31 @@ function authStateListener() {
          document.getElementById('pass_field').classList.remove('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       try {
          document.getElementById('log-in').classList.remove('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       try {
          document.getElementById('redirect').classList.remove('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       try {
          document.getElementById('forgot-pword').classList.remove('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       try {
          document.getElementById('formR').classList.remove('hiden');
       }
       catch(e) {
-         console.error(e)
+         console.error(e);
       }
       document.getElementById('log-in').classList.remove('hiden');
       document.getElementById('redirect').classList.remove('hiden');
