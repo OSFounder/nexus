@@ -123,15 +123,15 @@ try {
         
       });
      }
+     catch(e) {
+       console.error(e);
+     }
    });
    }
-   catch(e) {
-     console.error(e);
-   }
-}
-catch {
-   console.log('ERROR 404: Sign Up not located.')
-}
+ catch(e) {
+   console.error(e);
+ }
+
 try {
    binForgot.addEventListener('click', e=> {
       sendPasswordReset();
@@ -150,4 +150,5 @@ try {
 catch {
    console.log('ERROR 404: Sign Out not located.')
 }
+
 
