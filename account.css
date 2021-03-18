@@ -1,11 +1,11 @@
 #formL {
-    width: 500px;
+    width: 500vc;
     padding-top: 75px;
     margin: 0 auto;
 }
 
 #formR {
-    width: 528px;
+    width: 528vc;
     padding-top: 75px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -70,7 +70,7 @@ button:hover {
 #userInfo {
     padding: 14px 20px;
     display: block;
-    width: 528px;
+    width: 528vc;
     padding-top: 75px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
