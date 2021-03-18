@@ -1,6 +1,6 @@
 #formL {
     padding-top: 75px;
-    left: 50%;
+    margin: 0 auto;
 }
 
 #formR {
@@ -27,7 +27,8 @@ input {
 }
 
 #binButtons {
-    width: 88vw;
+    width: 75vw;
+    padding: 14px 20px;
     margin: 0 auto;
     text-align: center;
     background-color: white;
@@ -35,7 +36,7 @@ input {
 }
 
 button {
-    padding: 14px 30px;
+    padding: 14px 20px;
     background-color: white;
     color: black;
 }
