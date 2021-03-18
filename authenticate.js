@@ -112,10 +112,11 @@ try {
       document.getElementById('email_field').value;
       document.getElementById('pass_field').value;
       authStateListener();
-      firebase.analytics().setUserProperties({FirstName: fname});
-      firebase.analytics().setUserProperties({LastName: lname});
+      setUserProperties();
       user.updateProfile({
         displayName: dname
+        firstName: fname
+        lastName: lname
       }).then(function() {
         // Update successful.
       }).catch(function(error) {
