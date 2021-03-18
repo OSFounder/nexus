@@ -123,7 +123,7 @@ function authStateListener() {
       // create user page url
        userUrl = new URL('https://nexuslive.tech/login.html/');
        userUrl.searchParams.append('UID', uid);
-       window.location.href = userURL;
+       window.location.href = userUrl;
        
     } else {
       // User is signed out
