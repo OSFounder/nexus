@@ -49,7 +49,6 @@ function signOut() {
 function authStateListener() {
   // [START auth_state_listener]
      try {
-         document.getElementById('log-out').classList.add('hiden');
          document.getElementById('email_field').classList.add('hiden');
          document.getElementById('pass_field').classList.add('hiden');
       }
@@ -87,8 +86,6 @@ function authStateListener() {
          var uid = user.uid;
          document.getElementById('email_field').value='';
          document.getElementById('pass_field').value='';
-         document.getElementById('log-out').classList.remove('hiden');
-         document.getElementById('log-out').classList.add('bloated');
          try {
             document.getElementById('email_field').classList.add('hiden');
             document.getElementById('pass_field').classList.add('hiden');
@@ -120,8 +117,6 @@ function authStateListener() {
          catch(e) {
             console.error(e);
          }
-         document.getElementById('log-out').classList.remove('hiden');
-         document.getElementById('log-out').classList.add('bloated');
          if (firebase.auth().currentUser.emailVerified) {
             userUrl = new URL('https://nexuslive.tech/userPage.html');
             userUrl.searchParams.append('UID', uid);
@@ -142,8 +137,6 @@ function authStateListener() {
          // User is signed out
          // ...
          try {
-            document.getElementById('log-out').classList.add('hiden');
-            document.getElementById('log-out').classList.remove('bloated');
             document.getElementById('email_field').classList.remove('hiden');
             document.getElementById('pass_field').classList.remove('hiden');
          }
