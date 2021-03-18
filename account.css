@@ -72,12 +72,19 @@ button:hover {
 }
 
 #userInfo {
-    padding: 14px 20px;
+    padding-right: 40px;
     display: block;
-    width: 75vw;
+    width: 81vw;
     padding-top: 75px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+#logOut {
+    padding: 14px 40px;
+    display: block;
+    width: 100%;
+    margin: 0 auto
 }
