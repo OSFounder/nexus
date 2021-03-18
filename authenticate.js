@@ -26,6 +26,7 @@ function signInWithEmailPassword() {
     .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
+      alert('Password or Email wrong, try again');
     });
   // [END auth_signin_password]
 }
