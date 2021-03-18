@@ -66,3 +66,9 @@ button:hover {
 .bloated {
   width: 250px;
 }
+
+#userInfo {
+    padding: 14px 20px;
+    display: block;
+    background-color: white;
+}
