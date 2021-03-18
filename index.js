@@ -224,3 +224,10 @@ function signInRedirect(provider) {
   // [END auth_signin_redirect]
 }
 
+function setUserProperties() {
+  // [START analytics_set_user_properties]
+  firebase.analytics().setUserProperties({firstName: ''});
+  firebase.analytics().setUserProperties({lastName: ''});
+  // [END analytics_set_user_properties]
+}
+
