@@ -231,3 +231,27 @@ function setUserProperties() {
   // [END analytics_set_user_properties]
 }
 
+
+admin.initializeApp();
+
+const db = admin.firestore();
+
+/**
+ * Creates a document with ID -> uid in the `Users` collection.
+ *
+ * @param {Object} userRecord Contains the auth, uid and displayName info.
+ * @param {Object} context Details about the event.
+ */
+const createProfile = (userRecord, context) => {
+  const { email, phoneNumber, uid, displayName, fname, lname } = userRecord;
+
+  return db
+    .collection("users")
+    .doc(uid)
+    .set({ email, phoneNumber, displayName, fname, lname })
+    .catch(console.error);
+};
+
+module.exports = {
+  authOnCreate: functions.auth.user().onCreate(createProfile),
+};
