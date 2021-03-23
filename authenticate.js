@@ -62,7 +62,7 @@ function signUpWithEmailPassword() {
     .then({
         //data has been parsed
       })
-    .catch((e) {
+    .catch((e) => {
         console.error(e)
   });
      
