@@ -52,13 +52,20 @@ function signUpWithEmailPassword() {
       // Signed in 
       var user = firebase.auth().currentUser;
 
-      firebase.firestore().collection('users').doc(firebase.auth().currentUser.uid)
+      db.collection('users').doc(firebase.auth().currentUser.uid)
             .set({
                 firstName: fname,
                 lastName: lname,
                 email: email,
                 displayName: dname
             })
+    .then({
+        //data has been parsed
+      })
+    .catch((e) {
+        console.error(e)
+  });
+     
       // ...
     })
     .catch((error) => {
@@ -110,22 +117,7 @@ try {
       makeEmailCredential(email, password);
       document.getElementById('email_field').value;
       document.getElementById('pass_field').value;
-      startCreateProfile();
       authStateListener();
-      setUserProperties();
-     try {
-      user.updateProfile({
-        displayName: dname
-      }).then(function() {
-        // Update successful.
-      }).catch(function(error) {
-        // An error happened.
-        
-      });
-     }
-     catch(e) {
-       console.error(e);
-     }
    });
    }
  catch(e) {
