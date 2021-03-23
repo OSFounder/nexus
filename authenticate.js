@@ -11,8 +11,12 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 var dname = document.getElementById('dname');
 
+try {
 var db = firebase.firestore();
-
+}
+catch {
+  console.error('error loading firestore')
+}
 
 authStateListener();
 
