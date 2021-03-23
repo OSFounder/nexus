@@ -13,6 +13,8 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 var dname = document.getElementById('dname');
 
+var db = firebase.firestore();
+
 
 authStateListener();
 
