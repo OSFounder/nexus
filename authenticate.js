@@ -58,19 +58,17 @@ function signUpWithEmailPassword() {
       // Signed in 
       var user = firebase.auth().currentUser;
 
-      db.collection('users').doc(firebase.auth().currentUser.uid)
-            .set({
-                firstName: fname,
-                lastName: lname,
-                email: email,
-                displayName: dname
-            })
-    .then({
-        //data has been parsed
+      db.collection("users").add({
+          first: fname,
+          last: lname,
+          displayName: dname
       })
-    .catch((e) => {
-        console.error(e)
-  });
+      .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+      })
+      .catch((error) => {
+          console.error("Error adding document: ", error);
+      });
      
       // ...
     })
