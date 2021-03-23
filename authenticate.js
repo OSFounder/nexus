@@ -66,7 +66,7 @@ function signUpWithEmailPassword() {
           displayName: dname
       })
       .then((docRef) => {
-          console.log("Document written with ID: ", docRef.id);
+          console.log("Document written with ID: ", docRef.uid);
       })
       .catch((error) => {
           console.error("Error adding document: ", error);
