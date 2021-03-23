@@ -1,6 +1,4 @@
-const firebase = require("firebase");
-// Required for side-effects
-require("firebase/firestore");
+
 
 const txtEmail = document.getElementById('email_field');
 const txtPword = document.getElementById('pass_field');
