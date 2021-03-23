@@ -52,14 +52,13 @@ function signUpWithEmailPassword() {
       // Signed in 
       var user = firebase.auth().currentUser;
 
-      user.updateProfile({
-         //TODO: add updates here
-      }).then(function() {
-        // Update successful.
-        var user = userCredential.user;
-      }).catch(function(error) {
-        // An error happened.
-      });
+      firebase.firestore().collection('users').doc(firebase.auth().currentUser.uid)
+            .set({
+                firstName: fname,
+                lastName: lname,
+                email: email,
+                displayName: dname
+            })
       // ...
     })
     .catch((error) => {
