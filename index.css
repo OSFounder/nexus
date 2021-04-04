@@ -92,3 +92,15 @@ a {
     background-color: white;
     color: black;
   }
+  
+  #content-wrapper {
+    margin: 3.4vc;
+    border: 20px;
+    text-align: center;
+    padding: 14px, 16px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+    
