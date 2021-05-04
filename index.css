@@ -5,15 +5,11 @@
   background-color: #fce1e0;
 }
 
-
-/* Add a black background color to the top navigation */
 .topnav {
   position: relative;
   background-color: white;
   overflow: hidden;
 }
-
-/* Style the links inside the navigation bar */
 a {
       background-color: white;
    -webkit-transition: background 1s linear;
@@ -33,7 +29,6 @@ a {
 }
 
 
-/* Change the color of links on hover */
 .topnav a:hover {
    -webkit-transition: background 1s linear;
     -moz-transition: background 1s linear;
@@ -47,8 +42,6 @@ a {
   background-color: white;
   color: black;
 }
-
-/* Centered section inside the top navigation */
 .topnav-centered a {
   float: none;
   position: absolute;
@@ -57,7 +50,6 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
 }
@@ -93,18 +85,14 @@ a {
     color: black;
   }
   
-  .content-wrapper {
-    margin: 3.4vc;
-    border: 20px;
-    text-align: center;
-    padding: 14px, 16px;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
+#content-wrapper {
+  padding: 14px 16px;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 60px;
+  border: 60px;
   }
-  
-  .content-description {
-    font-size: 20px;
-  }
-    
+ 
