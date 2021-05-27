@@ -123,6 +123,7 @@ try {
       makeEmailCredential(email, password);
       document.getElementById('email_field').value;
       document.getElementById('pass_field').value;
+      sendVerificationEmail()
       authStateListener();
    });
    }
