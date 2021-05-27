@@ -28,6 +28,11 @@ a {
   font-size: 17px;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
 
 .topnav a:hover {
    -webkit-transition: background 1s linear;
