@@ -128,7 +128,6 @@ function authStateListener() {
           // userUrl.searchParams.append('accountVerified', 'false');
           //  window.location.href = userUrl;
          }
-         sendVerificationEmail();
          
 
       }
