@@ -62,13 +62,15 @@ a {
     display: block;
   }
 
+
+
   .topnav-centered a {
     position: relative;
     top: 0;
     left: 0;
     transform: none;
   }
-
+}
   
   h2 {
   padding: 60px 30px;
