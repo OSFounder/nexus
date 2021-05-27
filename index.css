@@ -95,4 +95,23 @@ a {
   margin: 60px;
   border: 60px;
   }
+  
+#content-title {
+  padding: 14px 16px;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  }
+  
+#content-description {
+    padding: 14px 16px;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  }
+  
  
