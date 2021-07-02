@@ -100,6 +100,7 @@ a {
   }
   
 #content-title {
+  text-align: center;
   padding: 14px 16px;
   background-color: white;
   color: black;
@@ -109,7 +110,8 @@ a {
   }
   
 #content-description {
-    padding: 14px 16px;
+  text-align: center;
+  padding: 14px 16px;
   background-color: white;
   color: black;
   font-family: 'Montserrat', sans-serif;
